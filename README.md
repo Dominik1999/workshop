@@ -96,7 +96,7 @@ The first thing to do when Raiden is up and running is to open a channel with so
 curl -i -X PUT http://localhost:5001/api/1/channels \
     -H 'Content-Type: application/json' --data-raw \
     '{"partner_address": "0x0bae0289AAA26845224F528F9B9DefE69e01606E", \
-    "token_address": "0x98a345f06e3A5DFe28EE0af38dd0780b4C0ed73B", \
+    "token_address": "0xa0f4c6e3605c44258855ac47536dd662785788fd", \
     "total_deposit": 10000000000000000000}'
 ```
 
@@ -104,7 +104,7 @@ curl -i -X PUT http://localhost:5001/api/1/channels \
 If you ever need to top up a channel, you can use the following command:
 ```sh
 curl -i -X PATCH http://localhost:5001/api/1/channels/ \
-0x98a345f06e3A5DFe28EE0af38dd0780b4C0ed73B/ADDRESS_OF_PARTNER \
+0xa0f4c6e3605c44258855ac47536dd662785788fd/ADDRESS_OF_PARTNER \
 -H 'Content-Type: application/json' \
 --data-raw '{"total_deposit": 15000000000000000000}'
 ```
@@ -113,14 +113,14 @@ curl -i -X PATCH http://localhost:5001/api/1/channels/ \
 To make payments, choose the address of the partner you've opened a channel with and do the following:
 ```sh
 curl -i -X POST http://localhost:5001/api/1/payments/ \
-0x98a345f06e3A5DFe28EE0af38dd0780b4C0ed73B/ADDRESS_OF_RECEIVER \
+0xa0f4c6e3605c44258855ac47536dd662785788fd/ADDRESS_OF_RECEIVER \
 -H 'Content-Type: application/json' --data-raw '{"amount": 100000}'
 ```
 
 Feel free to change the amounts of the payments.
 
 ### Other resources
+- [Getting Started with Raiden API](https://raiden-network.readthedocs.io/en/latest/api_walkthrough.html)
 - [API documentation](https://raiden-network.readthedocs.io/en/latest/rest_api.html)
 - [Raiden installation instructions](https://raiden-network.readthedocs.io/en/latest/overview_and_guide.html#installation)
-- [Getting Started with Raiden API](https://raiden-network.readthedocs.io/en/latest/api_walkthrough.html)
 - [TU-Berlin-Workshop-Token](https://goerli.etherscan.io/address/0xa0f4c6e3605c44258855ac47536dd662785788fd#code)
