@@ -30,7 +30,7 @@ unzip onboarder-macOS.zip
 #### Linux instructions
 - Download the onboarder [linux binary](https://raiden-nightlies.ams3.digitaloceanspaces.com/onboarder-linux.tar.gz):
 ```sh
-curl -O https://raiden-nightlies.ams3.digitaloceanspaces.com/onboarder-linux.tar.gz
+curl -L -O https://raiden-nightlies.ams3.digitaloceanspaces.com/onboarder-linux.tar.gz
 ```
 - Extract the file:
 ```sh
@@ -47,7 +47,7 @@ The fastest way to get up and running is to use the latest master binary release
 #### macOS instructions
 - Download the [latest master macOS binary](https://github.com/raiden-network/raiden/releases/download/v0.100.3/raiden-v0.100.3-macOS-x86_64.zip):
 ```sh
-curl -O https://github.com/raiden-network/raiden/releases/download/v0.100.3/raiden-v0.100.3-macOS-x86_64.zip
+curl -L -O https://github.com/raiden-network/raiden/releases/download/v0.100.3/raiden-v0.100.3-macOS-x86_64.zip
 ```
 - Unzip the file:
 ```sh
