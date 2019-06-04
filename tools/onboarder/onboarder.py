@@ -52,7 +52,7 @@ def main(output_path, faucet_url):
         click.style('Address: ', fg='blue') +
         click.style(to_checksum_address(address), fg='green')
     )
-    click.secho('Fetching Kovan Eth and Workshop tokens from faucet', fg='yellow')
+    click.secho('Fetching Gö-Eth and Workshop tokens from faucet', fg='yellow')
     success, response = fetch_eth(faucet_url, address)
     if success:
         click.secho('Succesfully funded address', fg='green')

@@ -1,18 +1,17 @@
-# ETHSingapore Hackathon Raiden Network guide
+# TU BERLIN blockchain labs Raiden Network guide
 
-This is the repo for the Raiden Network at the ETHSingapore hackathon.
-Below you'll find a list of links and information needed to get going with Raiden for the hackathon.
+This is the repo for the Raiden Network at the TU BERLIN.
+Below you'll find a list of links and information needed to get going with Raiden for today's tutorial.
 
 ### Prerequisites:
 - Access to an Ethereum Kovan RPC endpoint
     - For example through [Infura](https://infura.io/login)
-- A Kovan account and KETH. We've created a small tool that generates an account and sends KETH and tokens to it with just one simple command. Please see the [onboarding section](#on-boarding) below for instructions.
+- A Görli account and Gö-ETH. We've created a small tool that generates an account and sends Gö-ETH and tokens to it with just one simple command. Please see the [onboarding section](#on-boarding) below for instructions.
 - The Raiden client itself. Please see the [getting Raiden](#getting-raiden) section below.
   - If you're on Windows we recommend that you install Raiden for Windows Subsystem for Linux (WSL)
-- We have created [a gitter room](https://gitter.im/raiden-network/eth-singapore-hackathon) that you can use for asking questions or find out where you can find us if you need help or want to discuss something face-to-face.
 
 ### On-boarding:
-We've created a simple script that generates a keystore / address and sends Kovan ETH and ETHSingaporeTokens to the generated address. Follow these simple steps:
+We've created a simple script that generates a keystore / address and sends Görli ETH and TU-Berlin-Workshop-Tokens to the generated address. Follow these simple steps:
 
 #### macOS instructions
 - Download the onboarder [macOS binary](https://raiden-nightlies.ams3.digitaloceanspaces.com/onboarder-macOS.zip):
@@ -43,30 +42,31 @@ tar -xvzf onboarder-linux.tar.gz
 ```
 
 ### Getting Raiden
-The fastest way to get up and running is to use the latest nightly binary releases. Just follow the instructions below.
+The fastest way to get up and running is to use the latest master binary releases. Just follow the instructions below.
 
 #### macOS instructions
-- Download the [latest nightly macOS binary](https://raiden-nightlies.ams3.digitaloceanspaces.com/raiden-nightly-2018-12-06T18-08-23-v0.18.1.dev57%2Bg786347b2-macOS.zip):
+- Download the [latest master macOS binary](https://github.com/raiden-network/raiden/releases/download/v0.100.3/raiden-v0.100.3-macOS-x86_64.zip):
 ```sh
-curl -O https://raiden-nightlies.ams3.digitaloceanspaces.com/raiden-nightly-2018-12-06T18-08-23-v0.18.1.dev57%2Bg786347b2-macOS.zip
+curl -O https://github.com/raiden-network/raiden/releases/download/v0.100.3/raiden-v0.100.3-macOS-x86_64.zip
 ```
 - Unzip the file:
 ```sh
-unzip raiden-nightly-2018-12-06T18-08-23-v0.18.1.dev57%2Bg786347b2-macOS.zip
+unzip raiden-v0.100.3-macOS-x86_64.zip
 ```
 
 #### Linux instructions
-- Download the [latest nightly linux binary](https://raiden-nightlies.ams3.digitaloceanspaces.com/raiden-nightly-2018-12-06T17-58-34-v0.18.1.dev57%2Bg786347b2-linux.tar.gz):
+- Download the [latest master linux binary](https://github.com/raiden-network/raiden/releases):
+Example for x86
 ```sh
-curl -O https://raiden-nightlies.ams3.digitaloceanspaces.com/raiden-nightly-2018-12-06T17-58-34-v0.18.1.dev57%2Bg786347b2-linux.tar.gz
+curl -O https://github.com/raiden-network/raiden/releases/download/v0.100.3/raiden-v0.100.3-linux-x86_64.tar.gz
 ```
 - Extract the file:
 ```sh
-tar xvzf raiden-nightly-2018-12-06T17-58-34-v0.18.1.dev57%2Bg786347b2-linux.tar.gz
+tar xvzf raiden-v0.100.3-linux-x86_64.tar.gz
 ```
 
 ### Running Raiden:
-Once Raiden is installed it's time to fire it up. This is done with the following command (Please make sure the replace `raiden-binary` with the actual binary you just created above):
+Once Raiden is installed it's time to fire it up. This is done with the following command (Please make sure to replace `raiden-binary` with the actual binary you just created above):
 ```sh
 ./raiden-binary \
     --keystore-path keystore \
@@ -84,8 +84,8 @@ You can now access the WebUI at [http://localhost:5001/](http://localhost:5001).
 
 #### Tell the rest
 
-You should now have running Raiden node. From here you can join the ETHSingaporeTokens network. We recommend posting your address in the gitter channel if you want to try it out with someone else hacking on Raiden.
-You can also check out how the network is growing by checking out the [Raiden Explorer](https://kovan.explorer.raiden.network/tokens/0x98a345f06e3A5DFe28EE0af38dd0780b4C0ed73B) for the ETHSingaporeToken.
+You should now have running Raiden node. From here you can join the TU-Berlin-Workshop-Tokens network. We recommend posting your address in the gitter channel if you want to try it out with someone else hacking on Raiden.
+You can also check out how the network is growing by checking out the [Raiden Explorer](https://goerli.explorer.raiden.network/tokens/0xA0f4c6e3605C44258855Ac47536DD662785788FD) for the TU-Berlin-Workshop-Tokens.
 
 ### API commands:
 
@@ -123,5 +123,4 @@ Feel free to change the amounts of the payments.
 - [API documentation](https://raiden-network.readthedocs.io/en/latest/rest_api.html)
 - [Raiden installation instructions](https://raiden-network.readthedocs.io/en/latest/overview_and_guide.html#installation)
 - [Getting Started with Raiden API](https://raiden-network.readthedocs.io/en/latest/api_walkthrough.html)
-- [ETHSingaporeToken](https://kovan.etherscan.io/address/0x98a345f06e3A5DFe28EE0af38dd0780b4C0ed73B#code)
-- [Hackathon Gitter Room](https://gitter.im/raiden-network/eth-singapore-hackathon)
+- [ETHSingaporeToken](https://goerli.etherscan.io/address/0xa0f4c6e3605c44258855ac47536dd662785788fd#code)
