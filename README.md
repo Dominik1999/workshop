@@ -4,7 +4,7 @@ This is the repo for the Raiden Network at the TU BERLIN.
 Below you'll find a list of links and information needed to get going with Raiden for today's tutorial.
 
 ### Prerequisites:
-- Access to an Ethereum Kovan RPC endpoint
+- Access to an Ethereum Görli RPC endpoint
     - For example through [Infura](https://infura.io/login)
 - A Görli account and Gö-ETH. We've created a small tool that generates an account and sends Gö-ETH and tokens to it with just one simple command. Please see the [onboarding section](#on-boarding) below for instructions.
 - The Raiden client itself. Please see the [getting Raiden](#getting-raiden) section below.
