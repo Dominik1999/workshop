@@ -123,4 +123,4 @@ Feel free to change the amounts of the payments.
 - [API documentation](https://raiden-network.readthedocs.io/en/latest/rest_api.html)
 - [Raiden installation instructions](https://raiden-network.readthedocs.io/en/latest/overview_and_guide.html#installation)
 - [Getting Started with Raiden API](https://raiden-network.readthedocs.io/en/latest/api_walkthrough.html)
-- [ETHSingaporeToken](https://goerli.etherscan.io/address/0xa0f4c6e3605c44258855ac47536dd662785788fd#code)
+- [TU-Berlin-Workshop-Token](https://goerli.etherscan.io/address/0xa0f4c6e3605c44258855ac47536dd662785788fd#code)
